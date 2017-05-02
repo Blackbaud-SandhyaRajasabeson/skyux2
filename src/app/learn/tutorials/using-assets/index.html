@@ -1,0 +1,19 @@
+<sky-demo-nav></sky-demo-nav>
+<div class="sky-container">
+    <h1>Using assets</h1>
+
+    <p>Including assets such as images is possible by using the following technique.</p>
+
+    <ol>
+      <li>Create an <code>assets</code> folder directly under the <code>src</code> folder.</li>
+      <li>In any of your HTML, CSS, and SCSS files, reference any file in the <code>src/assets/</code> folder using <code>&#126;/assets/</code> before your filename.  For example, if you added <code>src/assets/photo.jpg</code>, you could reference the image in an HTML file using <code>&lt;img src="&#126;/assets/photo.jpg" alt="Photo" /&gt;</code>.</li>
+    </ol>
+
+    <p>Filenames are updated at build time to include a hash of the file's contents.  This means you must use the steps described above to reference any assets.</p>
+
+    <p>During the CI build, any assets are automatically uploaded to our CDN and the `--assets` is set to the CDN.</p>
+
+    <p><strong>Next step »</strong> <a routerLink="/learn/reference">Technical reference</a></p>
+    <p><strong>Previous step »</strong> <a routerLink="/learn/tutorials/host">Host a project</a></p>
+
+</div>

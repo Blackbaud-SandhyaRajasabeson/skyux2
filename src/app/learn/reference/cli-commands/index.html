@@ -2,7 +2,7 @@
 <div class="sky-container">
     <h1>SKY UX CLI commands</h1>
     <p>This reference describes the commands and options that are available in the SKY UX CLI.</p>
-    
+
     <ul>
         <li><p><code>skyux new</code> — Initializes a new local SKY UX project by pulling down the latest version of the template and installing the necessary dependencies. For information about the default items that the template provides in a SKY UX single-page application, see <a routerLink="/learn/reference/template-items">the template items reference</a>.</p></li>
         <li><p><code>skyux serve</code> — Serves the current SKY UX single-page application locally. This command also opens the <code>host</code> endpoint with the necessary query string to pull your local files. It tacks on <code>local=true</code> in the query string to instruct SKY UX Host to pull files from the local machine instead of the hosted location. The SPA automatically opens in the default browser, but you can add the <code>--launch none</code> option to the command to prevent the SPA from opening. The <code>serve</code> command basically updates the production location rather than creating a duplicate local instance, so to view the production version alongside a local version, you need to open a separate incognito tab. The <code>serve</code> command sets a cookie to apply local dev mode.</p></li>
@@ -13,12 +13,13 @@
         <li><p><code>skyux version</code> or <code>skyux -v</code> — Returns the version of SKY UX CLI.</p></li>
         <li><p><code>skyux</code>, <code>skyux help</code>, or <code>skyux -h</code> — Displays help information for SKY UX CLI arguments. This lists the commands and options that are available in the SKY UX CLI and provides descriptions.</p></li>
     </ul>
-    
+
     <h2>Options</h2>
     <ul>
         <li><p><code>-l</code> or <code>--launch</code> — Specifies the URL to launch when <code>skyux serve</code> runs. For example, <code>skyux serve --launch local</code> launches the local URL. The available options are <code>none</code>, which stops any URL from launching, <code>local</code>, and <code>host</code>, which launches the SKY UX Host URL and is the default value. For more information about these options, see the <a routerLink="/learn/tutorials/serve-project">tutorial on how to serve the default single-page application</a>.</p></li>
         <li><p><code>--envid</code> — Specifies the environment ID to add to the Host URL when <code>skyux serve</code> runs. For example, <code>skyux serve --envid 1234</code>.</p></li>
         <li><p><code>--svcid</code> — Specifies the service ID to add to the Host URL when <code>skyux serve</code> runs. <!-- For example, <code>skyux serve --svcid 5678</code>. --> </p></li>
+        <li><p><code>--assets</code> — In HTML, CSS, and SCSS files, any references to <code>&#126;/assets/</code> are replaced by this value during <code>skyux build</code>.</p></li>
     </ul>
 
     <p><strong>Next step »</strong> <a routerLink="/learn/faq">Frequently asked questions</a></p>
